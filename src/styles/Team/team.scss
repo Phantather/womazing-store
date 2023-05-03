@@ -1,0 +1,46 @@
+.team{
+  padding-bottom: 130px;
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 125px;
+  }
+  &__right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    &-title{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 140%;
+      /* identical to box height, or 35px */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+    }
+    &-desc{
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      /* or 24px */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+    }
+    &-link{
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 140%;
+      /* identical to box height, or 24px */
+
+      letter-spacing: 0.02em;
+
+      /* CTA */
+
+      color: #6E9C9F;
+    }
+  }
+}

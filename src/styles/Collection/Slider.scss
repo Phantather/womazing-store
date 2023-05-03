@@ -1,0 +1,53 @@
+.collection{
+  padding: 130px 0;
+  &__btn{
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    border: 1px solid #6E9C9F;
+    color: #6E9C9F;
+    padding: 15px 25px;
+    background: transparent;
+    display: block;
+    margin: 30px auto 0;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    /* identical to box height, or 44px */
+
+    letter-spacing: 0.02em;
+
+    color: #000000;
+    margin-bottom:92px ;
+  }
+  &__card{
+    text-align: center;
+    &-title{
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 140%;
+      /* identical to box height, or 28px */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+    }
+    &-priec{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 140%;
+      /* identical to box height, or 21px */
+
+      letter-spacing: 0.02em;
+
+      /* Дополнительный акцент */
+
+      color: #998E78;
+
+    }
+  }
+}

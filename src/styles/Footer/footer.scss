@@ -1,0 +1,62 @@
+.footer{
+  padding: 100px 0;
+  background: #F1EADC;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-menu{
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      &-item{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+      }
+    }
+  }
+  &__icon{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__card-icons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 31px;
+    align-items: end;
+  }
+  &__menu{
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+    &-item{
+
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 140%;
+      /* identical to box height, or 21px */
+
+      letter-spacing: 0.02em;
+
+      color: #000000;
+      cursor: pointer;
+      transition: .5s;
+
+      &:hover{
+        color: #6E9C9F;
+        transition: .5s;
+      }
+    }
+  }
+}
