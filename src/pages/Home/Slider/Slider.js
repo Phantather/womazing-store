@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, {useContext,useEffect} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,9 +12,17 @@ import img from "../../../assets/home/Фото товара.png"
 
 
 import { FreeMode, Navigation} from "swiper";
+import {CustomContext} from "../../../utils/Context";
+
 
 
 const Slider = () => {
+
+    const {products,getAllProducts} = useContext(CustomContext)
+    useEffect(() => {
+        getAllProducts()
+    },[])
+    console.log(products)
     return (
         <section className="collection">
             <div className="container">
@@ -29,66 +37,20 @@ const Slider = () => {
                     modules={[FreeMode,Navigation]}
                     className="mySwiper"
                     >
-                    <SwiperSlide>
-                        <div className="collection__card">
-                            <div className="collection__images">
-                                <img className="collection__card-img" src={img} alt=""/>
-                            </div>
-                            <h3 className='collection__card-title'>Футболка USA</h3>
-                            <p className='collection__card-price'>$129</p>
-                        </div>
+                        {
+                            products.map(item => (
+                                <SwiperSlide key={item.id}>
+                                    <div className="collection__card">
+                                        <div className="collection__images" style={{background:`url(${`.${item?.img?.filter((item,idx) => idx === 0)}`}) center/cover`}}>
 
-                    </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="collection__card">
-                                <div className="collection__images">
-                                    <img className="collection__card-img" src={img} alt=""/>
-                                </div>
-                                <h3 className='collection__card-title'>Футболка USA</h3>
-                                <p className='collection__card-price'>$129</p>
-                            </div>
+                                        </div>
+                                        <h3 className='collection__card-title'>{item.title}</h3>
+                                        <p className='collection__card-price'>${item.price}</p>
+                                    </div>
 
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="collection__card">
-                                <div className="collection__images">
-                                    <img className="collection__card-img" src={img} alt=""/>
-                                </div>
-                                <h3 className='collection__card-title'>Футболка USA</h3>
-                                <p className='collection__card-price'>$129</p>
-                            </div>
-
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="collection__card">
-                                <div className="collection__images">
-                                    <img className="collection__card-img" src={img} alt=""/>
-                                </div>
-                                <h3 className='collection__card-title'>Футболка USA</h3>
-                                <p className='collection__card-price'>$129</p>
-                            </div>
-
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="collection__card">
-                                <div className="collection__images">
-                                    <img className="collection__card-img" src={img} alt=""/>
-                                </div>
-                                <h3 className='collection__card-title'>Футболка USA</h3>
-                                <p className='collection__card-price'>$129</p>
-                            </div>
-
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="collection__card">
-                                <div className="collection__images">
-                                    <img className="collection__card-img" src={img} alt=""/>
-                                </div>
-                                <h3 className='collection__card-title'>Футболка USA</h3>
-                                <p className='collection__card-price'>$129</p>
-                            </div>
-
-                        </SwiperSlide>
+                                </SwiperSlide>
+                            ))
+                        }
                         <SwiperSlide>
                             <div className="collection__card">
                                 <div className="collection__images">
