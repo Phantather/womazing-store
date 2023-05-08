@@ -8,6 +8,7 @@ export const Context = (props) => {
     const [products, setProducts] = useState([])
     const [categories, setCategories] = useState('all')
     const [page, setPage] = useState(1)
+    const [cart,setCart] = useState( [])
     const [changeGender, setChangeGender] = useState('all')
 
     const getAllProducts = () => {
@@ -16,12 +17,25 @@ export const Context = (props) => {
             .catch((error) => console.log(error))
     }
 
+    const addElCart = (item) => {
+
+        if (cart.some(el => el.id == item.id)){
+            setCart(cart.map(el => el.id == item.id ? {...item,count : el.count + 1} : el))
+        } else {
+            setCart([...cart, {...item,count:1}])
+        }
+    }
+
+
+
     const value = {
         products, setProducts,
         getAllProducts,
+        addElCart,
         categories, setCategories,
         page, setPage,
-        changeGender, setChangeGender
+        changeGender, setChangeGender,
+        cart,setCart
     }
     return <CustomContext.Provider value={value}>
         {props.children}

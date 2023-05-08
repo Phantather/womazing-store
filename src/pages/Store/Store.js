@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Card from "../../components/Card/Card";
 import {CustomContext} from "../../utils/Context";
 import {Pagination} from "antd";

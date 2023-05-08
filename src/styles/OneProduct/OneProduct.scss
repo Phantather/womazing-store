@@ -50,6 +50,13 @@
     &-row{
       display: flex;
       column-gap: 20px;
+      .active{
+        background: black;
+        color: white;
+      }
+      .color-active{
+        opacity: 1;
+      }
     }
   }
   &__size{
@@ -67,6 +74,7 @@
     border-radius:50%;
     border: 2px solid black;
     cursor: pointer;
+    opacity: 0.5;
   }
   &__btn{
     padding: 22px 50px;
@@ -79,5 +87,10 @@
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    &:disabled{
+      cursor: not-allowed;
+      background: black;
+      opacity: 0.5;
+    }
   }
 }

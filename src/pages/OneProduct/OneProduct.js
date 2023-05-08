@@ -1,10 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import axios from "axios";
 import Slider from "../Home/Slider/Slider";
+import {CustomContext} from "../../utils/Context";
 
 const OneProduct = () => {
     const [product, setProduct] = useState({})
+    const [currentSize,setCurrentSize] = useState()
+    const [currentColor,setCurrentColor] = useState("black")
+    const {addElCart} = useContext(CustomContext)
     const params = useParams()
 
     const getOneProduct = () => {
@@ -43,7 +47,10 @@ const OneProduct = () => {
                             <div className="oneproduct__sizes-row">
                                 {
                                     product?.sizes?.map(item => (
-                                        <div className="oneproduct__size">
+                                        <div
+                                             onClick={() => setCurrentSize(item.size)}
+                                             className={`oneproduct__size ${currentSize === item.size ? "active" : ""}`}
+                                        >
                                             {item.size}
                                         </div>
                                     ))
@@ -58,7 +65,10 @@ const OneProduct = () => {
                             <div className="oneproduct__sizes-row">
                                 {
                                     product?.colors?.map(item => (
-                                        <div className="oneproduct__color" style={{background: item.color}}>
+                                        <div  style={{background: item.color}}
+                                             onClick={() => setCurrentColor(item.color)}
+                                              className={`oneproduct__color ${currentColor === item.color ? "color-active" : ""}`}
+                                        >
 
                                         </div>
                                     ))
@@ -66,7 +76,7 @@ const OneProduct = () => {
                             </div>
 
                         </div>
-                        <button className="oneproduct__btn">
+                        <button disabled={!currentSize} onClick={() => addElCart(product)} className="oneproduct__btn">
                             Добавить в корзину
                         </button>
                     </div>
