@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link, NavLink} from "react-router-dom";
+import {CustomContext} from "../../utils/Context";
 
 //media
 import logo  from '../../assets/Лого.svg'
@@ -7,7 +8,10 @@ import {MdPhoneInTalk} from 'react-icons/md'
 import {SlLogin} from 'react-icons/sl'
 import {BsHandbag} from 'react-icons/bs'
 
+
 const Header = () => {
+    const {user,logoutUser} = useContext(CustomContext)
+
     return (
         <header className="header">
             <div className="container">
@@ -36,9 +40,22 @@ const Header = () => {
                             <MdPhoneInTalk/>
                             +7 (495) 823-54-12
                         </a>
-                        <Link to={'/login'} className="header__user">
-                            <SlLogin/>
-                        </Link>
+
+                        {
+                            user.login.length ?
+                                <Link to={'/'} className="header__user"
+                                      onClick={() => logoutUser()}
+                                >
+                                    Выйти
+                                </Link>
+                            :
+                                <Link to={'/login'} className="header__user">
+                                    <SlLogin/>
+                                </Link>
+
+
+                        }
+
                         <Link to={'/cart'} className="header__user">
                             <BsHandbag/>
                         </Link>

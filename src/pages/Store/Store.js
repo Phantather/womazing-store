@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import Card from "../../components/Card/Card";
 import {CustomContext} from "../../utils/Context";
 import {Pagination} from "antd";
@@ -7,7 +7,7 @@ import {ImMan,ImWoman,ImManWoman} from "react-icons/im"
 
 const Store = () => {
 
-    const {products, getAllProducts,  categories, setCategories, page, setPage, changeGender, setChangeGender} = useContext(CustomContext)
+    const {products,  categories, setCategories, page, setPage, changeGender, setChangeGender} = useContext(CustomContext)
 
     const showCount = products
         .filter((item) => changeGender === 'all' ? item : item.gender === changeGender)
@@ -18,9 +18,7 @@ const Store = () => {
         .filter((item) => changeGender === 'all' ? item : item.gender === changeGender)
         .filter((el) => categories === 'all' ? el : el.category === categories).length
 
-    useEffect(() => {
-       getAllProducts()
-   },[])
+
 
 
 

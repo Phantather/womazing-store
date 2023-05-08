@@ -1,5 +1,22 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "akdil.phanti@gmail.com",
+      "password": "$2a$10$DCO/HNElVb4ZDcxVjhQzaOfME70YvJj/.OZLMZO8AVK4lzl2/j7NC",
+      "login": "Phantather",
+      "tel": "996505020599",
+      "orders": [],
+      "id": 1
+    },
+    {
+      "email": "admin@mail.ru",
+      "password": "$2a$10$aw2NlaCuislnt5zSUibTbOoKBJ6lu/cIq5cH9NSUo6BXgn.Nv5.au",
+      "login": "admin",
+      "tel": "996505020599",
+      "orders": [],
+      "id": 2
+    }
+  ],
   "clothes": [
     {
       "id": 1,
@@ -6315,6 +6332,5 @@
       "brand": "Nike",
       "gender": "woman"
     }
-  ],
-  "orders": []
+  ]
 }

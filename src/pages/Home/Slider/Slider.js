@@ -1,5 +1,5 @@
 
-import React, {useContext,useEffect} from "react";
+import React, {useContext} from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -18,11 +18,9 @@ import {CustomContext} from "../../../utils/Context";
 
 const Slider = () => {
 
-    const {products,getAllProducts} = useContext(CustomContext)
-    useEffect(() => {
-        getAllProducts()
-    },[])
-    console.log(products)
+    const {products} = useContext(CustomContext)
+
+
     return (
         <section className="collection">
             <div className="container">
