@@ -2,19 +2,90 @@
   "users": [
     {
       "email": "akdil.phanti@gmail.com",
-      "password": "$2a$10$DCO/HNElVb4ZDcxVjhQzaOfME70YvJj/.OZLMZO8AVK4lzl2/j7NC",
+      "password": "$2a$10$OiwL.LNFU7Sde4LTXd1n4OgX8BsaL3s9aZg535Ffflqwrqy2a.kha",
       "login": "Phantather",
       "tel": "996505020599",
-      "orders": [],
+      "orders": [
+        {
+          "name": "Akdil 0501251221",
+          "email": "akdil.phanti@gmail.com",
+          "tel": "996505020599",
+          "country": "asdasdasdas",
+          "city": "Бишкек",
+          "street": "Ленина",
+          "home": "12",
+          "flat": "asdasd",
+          "clothes": [
+            {
+              "id": 8,
+              "title": "Nike blue",
+              "price": 150,
+              "category": "shoes",
+              "img": [
+                "./catalog/shoes/8_1.jpg",
+                "./catalog/shoes/8_2.jpg",
+                "./catalog/shoes/8_3.jpg",
+                "./catalog/shoes/8_4.jpg"
+              ],
+              "sizes": [
+                {
+                  "id": 1,
+                  "size": 38,
+                  "inStock": 3
+                },
+                {
+                  "id": 2,
+                  "size": 39,
+                  "inStock": 4
+                },
+                {
+                  "id": 3,
+                  "size": 40,
+                  "inStock": 3
+                },
+                {
+                  "id": 4,
+                  "size": 41,
+                  "inStock": 2
+                },
+                {
+                  "id": 5,
+                  "size": 42,
+                  "inStock": 0
+                }
+              ],
+              "review": [],
+              "colors": [
+                {
+                  "id": 1,
+                  "color": "white",
+                  "inStock": 1
+                },
+                {
+                  "id": 2,
+                  "color": "red",
+                  "inStock": 1
+                },
+                {
+                  "id": 3,
+                  "color": "blue",
+                  "inStock": 1
+                },
+                {
+                  "id": 4,
+                  "color": "black",
+                  "inStock": 1
+                }
+              ],
+              "brand": "Nike",
+              "gender": "woman",
+              "count": 1
+            }
+          ],
+          "price": 150
+        }
+      ],
       "id": 1
-    },
-    {
-      "email": "admin@mail.ru",
-      "password": "$2a$10$aw2NlaCuislnt5zSUibTbOoKBJ6lu/cIq5cH9NSUo6BXgn.Nv5.au",
-      "login": "admin",
-      "tel": "996505020599",
-      "orders": [],
-      "id": 2
     }
   ],
   "clothes": [
@@ -6331,6 +6402,408 @@
       ],
       "brand": "Nike",
       "gender": "woman"
+    }
+  ],
+  "orders": [
+    {
+      "name": "asda",
+      "email": "akdil.phanti@gmail.com",
+      "tel": "996505020599",
+      "country": "231231",
+      "city": "asdasd",
+      "street": "Ленина",
+      "home": "12",
+      "flat": "12",
+      "clothes": [
+        {
+          "id": 2,
+          "title": "Nike Jordan Air",
+          "price": 150,
+          "category": "shoes",
+          "img": [
+            "./catalog/shoes/2_1.jpg",
+            "./catalog/shoes/2_2.jpg",
+            "./catalog/shoes/2_3.jpg",
+            "./catalog/shoes/2_4.jpg"
+          ],
+          "sizes": [
+            {
+              "id": 1,
+              "size": 38,
+              "inStock": 3
+            },
+            {
+              "id": 2,
+              "size": 39,
+              "inStock": 0
+            },
+            {
+              "id": 3,
+              "size": 40,
+              "inStock": 3
+            },
+            {
+              "id": 4,
+              "size": 41,
+              "inStock": 2
+            },
+            {
+              "id": 5,
+              "size": 42,
+              "inStock": 5
+            }
+          ],
+          "review": [],
+          "colors": [
+            {
+              "id": 1,
+              "color": "white",
+              "inStock": 1
+            },
+            {
+              "id": 2,
+              "color": "red",
+              "inStock": 1
+            },
+            {
+              "id": 3,
+              "color": "blue",
+              "inStock": 1
+            },
+            {
+              "id": 4,
+              "color": "black",
+              "inStock": 1
+            }
+          ],
+          "brand": "Nike",
+          "gender": "men",
+          "count": 1
+        }
+      ],
+      "price": 150,
+      "userEmail": "akdil.phanti@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Akdil 0501251221",
+      "email": "akdil.hstech@gmail.com",
+      "tel": "996505020599",
+      "country": "444",
+      "city": "h h h",
+      "street": "Ленина",
+      "home": "12",
+      "flat": "33",
+      "clothes": [
+        {
+          "id": 2,
+          "title": "Nike Jordan Air",
+          "price": 150,
+          "category": "shoes",
+          "img": [
+            "./catalog/shoes/2_1.jpg",
+            "./catalog/shoes/2_2.jpg",
+            "./catalog/shoes/2_3.jpg",
+            "./catalog/shoes/2_4.jpg"
+          ],
+          "sizes": [
+            {
+              "id": 1,
+              "size": 38,
+              "inStock": 3
+            },
+            {
+              "id": 2,
+              "size": 39,
+              "inStock": 0
+            },
+            {
+              "id": 3,
+              "size": 40,
+              "inStock": 3
+            },
+            {
+              "id": 4,
+              "size": 41,
+              "inStock": 2
+            },
+            {
+              "id": 5,
+              "size": 42,
+              "inStock": 5
+            }
+          ],
+          "review": [],
+          "colors": [
+            {
+              "id": 1,
+              "color": "white",
+              "inStock": 1
+            },
+            {
+              "id": 2,
+              "color": "red",
+              "inStock": 1
+            },
+            {
+              "id": 3,
+              "color": "blue",
+              "inStock": 1
+            },
+            {
+              "id": 4,
+              "color": "black",
+              "inStock": 1
+            }
+          ],
+          "brand": "Nike",
+          "gender": "men",
+          "count": 1
+        }
+      ],
+      "price": 150,
+      "userEmail": "akdil.phanti@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "asda",
+      "email": "asdasd@gmail.com",
+      "tel": "996505020599",
+      "country": "asdasd",
+      "city": "sdsadasd",
+      "street": "asdasdas",
+      "home": "12",
+      "flat": "98o7",
+      "clothes": [
+        {
+          "id": 8,
+          "title": "Nike blue",
+          "price": 150,
+          "category": "shoes",
+          "img": [
+            "./catalog/shoes/8_1.jpg",
+            "./catalog/shoes/8_2.jpg",
+            "./catalog/shoes/8_3.jpg",
+            "./catalog/shoes/8_4.jpg"
+          ],
+          "sizes": [
+            {
+              "id": 1,
+              "size": 38,
+              "inStock": 3
+            },
+            {
+              "id": 2,
+              "size": 39,
+              "inStock": 4
+            },
+            {
+              "id": 3,
+              "size": 40,
+              "inStock": 3
+            },
+            {
+              "id": 4,
+              "size": 41,
+              "inStock": 2
+            },
+            {
+              "id": 5,
+              "size": 42,
+              "inStock": 0
+            }
+          ],
+          "review": [],
+          "colors": [
+            {
+              "id": 1,
+              "color": "white",
+              "inStock": 1
+            },
+            {
+              "id": 2,
+              "color": "red",
+              "inStock": 1
+            },
+            {
+              "id": 3,
+              "color": "blue",
+              "inStock": 1
+            },
+            {
+              "id": 4,
+              "color": "black",
+              "inStock": 1
+            }
+          ],
+          "brand": "Nike",
+          "gender": "woman",
+          "count": 1
+        }
+      ],
+      "price": 150,
+      "userEmail": "akdil.phanti@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "asda",
+      "email": "asdasd@gmail.com",
+      "tel": "996505020599",
+      "country": "asdasd",
+      "city": "sdsadasd",
+      "street": "asdasdas",
+      "home": "12",
+      "flat": "98o7",
+      "clothes": [
+        {
+          "id": 8,
+          "title": "Nike blue",
+          "price": 150,
+          "category": "shoes",
+          "img": [
+            "./catalog/shoes/8_1.jpg",
+            "./catalog/shoes/8_2.jpg",
+            "./catalog/shoes/8_3.jpg",
+            "./catalog/shoes/8_4.jpg"
+          ],
+          "sizes": [
+            {
+              "id": 1,
+              "size": 38,
+              "inStock": 3
+            },
+            {
+              "id": 2,
+              "size": 39,
+              "inStock": 4
+            },
+            {
+              "id": 3,
+              "size": 40,
+              "inStock": 3
+            },
+            {
+              "id": 4,
+              "size": 41,
+              "inStock": 2
+            },
+            {
+              "id": 5,
+              "size": 42,
+              "inStock": 0
+            }
+          ],
+          "review": [],
+          "colors": [
+            {
+              "id": 1,
+              "color": "white",
+              "inStock": 1
+            },
+            {
+              "id": 2,
+              "color": "red",
+              "inStock": 1
+            },
+            {
+              "id": 3,
+              "color": "blue",
+              "inStock": 1
+            },
+            {
+              "id": 4,
+              "color": "black",
+              "inStock": 1
+            }
+          ],
+          "brand": "Nike",
+          "gender": "woman",
+          "count": 1
+        }
+      ],
+      "price": 150,
+      "userEmail": "akdil.phanti@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Akdil 0501251221",
+      "email": "akdil.phanti@gmail.com",
+      "tel": "996505020599",
+      "country": "asdasdasdas",
+      "city": "Бишкек",
+      "street": "Ленина",
+      "home": "12",
+      "flat": "asdasd",
+      "clothes": [
+        {
+          "id": 8,
+          "title": "Nike blue",
+          "price": 150,
+          "category": "shoes",
+          "img": [
+            "./catalog/shoes/8_1.jpg",
+            "./catalog/shoes/8_2.jpg",
+            "./catalog/shoes/8_3.jpg",
+            "./catalog/shoes/8_4.jpg"
+          ],
+          "sizes": [
+            {
+              "id": 1,
+              "size": 38,
+              "inStock": 3
+            },
+            {
+              "id": 2,
+              "size": 39,
+              "inStock": 4
+            },
+            {
+              "id": 3,
+              "size": 40,
+              "inStock": 3
+            },
+            {
+              "id": 4,
+              "size": 41,
+              "inStock": 2
+            },
+            {
+              "id": 5,
+              "size": 42,
+              "inStock": 0
+            }
+          ],
+          "review": [],
+          "colors": [
+            {
+              "id": 1,
+              "color": "white",
+              "inStock": 1
+            },
+            {
+              "id": 2,
+              "color": "red",
+              "inStock": 1
+            },
+            {
+              "id": 3,
+              "color": "blue",
+              "inStock": 1
+            },
+            {
+              "id": 4,
+              "color": "black",
+              "inStock": 1
+            }
+          ],
+          "brand": "Nike",
+          "gender": "woman",
+          "count": 1
+        }
+      ],
+      "price": 150,
+      "userEmail": "akdil.phanti@gmail.com",
+      "id": 5
     }
   ]
 }

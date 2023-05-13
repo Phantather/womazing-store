@@ -30,6 +30,12 @@ export const Context = (props) => {
         }
     }
 
+    const deleteElCart = (id) => {
+        return setCart(cart.filter((item) => {
+            return item.id !== id
+        }))
+    }
+
     const registerUser = (data) => {
         axios.post('http://localhost:4444/register', {...data, orders: []})
             .then((res) => {
@@ -59,8 +65,18 @@ export const Context = (props) => {
         if (localStorage.getItem('user') !== null) {
             setUser(JSON.parse(localStorage.getItem('user')))
         }
+
+        if (localStorage.getItem('cart') !== null) {
+            setCart(JSON.parse(localStorage.getItem('cart')))
+        }
+
         getAllProducts()
     },[])
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart))
+    },[cart])
+
 
     const value = {
         products, setProducts,
@@ -72,7 +88,8 @@ export const Context = (props) => {
         cart,setCart,
         registerUser,
         user, setUser,
-        logoutUser, loginUser
+        logoutUser, loginUser,
+        deleteElCart
     }
     return <CustomContext.Provider value={value}>
         {props.children}

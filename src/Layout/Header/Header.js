@@ -10,7 +10,7 @@ import {BsHandbag} from 'react-icons/bs'
 
 
 const Header = () => {
-    const {user,logoutUser} = useContext(CustomContext)
+    const {user,logoutUser,cart} = useContext(CustomContext)
 
     return (
         <header className="header">
@@ -57,7 +57,15 @@ const Header = () => {
                         }
 
                         <Link to={'/cart'} className="header__user">
-                            <BsHandbag/>
+                            <div className="header__user-cart">
+                                <BsHandbag/>
+                                {
+                                    cart.length ?
+                                        <sup>{cart.length}</sup>
+                                        :
+                                        ''
+                                }
+                            </div>
                         </Link>
                     </div>
                 </nav>

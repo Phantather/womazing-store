@@ -51,4 +51,33 @@
       }
     }
   }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    justify-content: flex-end;
+    &-info {
+      background: #F1EADC;
+      padding: 16px 51px 17px 31px;
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+    &-btn {
+      padding: 22px 50px;
+      background: #6E9C9F;
+      font-weight: 400;
+      font-size: 17px;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      cursor: pointer;
+      border: none;
+    }
+  }
 }
